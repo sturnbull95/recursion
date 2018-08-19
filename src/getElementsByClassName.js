@@ -9,7 +9,7 @@ var getElementsByClassName = function(className
   // your code here
   var everything = $("*");
 	var result = [];
-	var pattern = new RegExp("\\b"+className+"\\b","i");
+	var pattern = new RegExp(className);
 		for(var i = 0; i < everything.length; i++){
 			if(pattern.test(everything[i].className)){
         result.push(everything[i]);
